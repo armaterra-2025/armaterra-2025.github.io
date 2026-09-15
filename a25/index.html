@@ -3,14 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Campania Aglianico IGP 2025 — informazioni obbligatorie</title>
-<meta name="description" content="Informazioni obbligatorie sull'etichetta elettronica: ingredienti e dichiarazione nutrizionale.">
-<meta name="robots" content="index, follow">
+<title>E-label — Campania Aglianico IGP 2025</title>
+<meta name="description" content="Informazioni obbligatorie dell'etichetta elettronica: ingredienti e dichiarazione nutrizionale.">
 <!--
   Pagina di etichettatura elettronica (Reg. UE 2021/2117).
   Nessuna richiesta esterna: niente font remoti, niente analytics, niente cookie.
-  Non aggiungere contenuti promozionali, link commerciali o strumenti di
-  tracciamento: la norma lo vieta esplicitamente su questa pagina.
+  Non aggiungere contenuti promozionali o link commerciali.
 -->
 <style>
   :root {
@@ -30,32 +28,26 @@
     font-size: 1.0625rem;
     line-height: 1.55;
   }
-  .foglio {
-    max-width: 33rem;
-    margin: 0 auto;
-    padding: 2.5rem 1.4rem 4rem;
-  }
+  .foglio { max-width: 33rem; margin: 0 auto; padding: 2.5rem 1.4rem 4rem; }
 
-  header { border-bottom: 2px solid var(--oro); padding-bottom: 1.5rem; }
+  .occhiello {
+    margin: 0 0 .5rem;
+    font-size: .95rem;
+    letter-spacing: .2em;
+    color: var(--oro);
+  }
   h1 {
-    font-size: clamp(1.7rem, 6vw, 2.35rem);
+    font-size: clamp(1.65rem, 6vw, 2.2rem);
     line-height: 1.15;
     font-weight: 400;
-    margin: 0 0 .35rem;
-    letter-spacing: .01em;
+    margin: 0 0 .3rem;
   }
-  .annata { font-size: 1.15rem; color: var(--tenue); margin: 0; }
-  .produttore {
-    margin: 0 0 1.1rem;
-    font-size: .95rem;
-    color: var(--oro);
-    letter-spacing: .18em;
-  }
+  .annata { font-size: 1.1rem; color: var(--tenue); margin: 0 0 1.6rem; }
 
   h2 {
     font-size: 1.15rem;
     font-weight: 400;
-    margin: 2.6rem 0 .9rem;
+    margin: 2.4rem 0 .9rem;
     padding-bottom: .3rem;
     border-bottom: 1px solid var(--riga);
   }
@@ -64,7 +56,7 @@
   .voce {
     display: flex;
     flex-wrap: wrap;
-    gap: .2rem 1rem;
+    gap: .15rem 1rem;
     padding: .55rem 0;
     border-bottom: 1px solid var(--riga);
   }
@@ -72,16 +64,12 @@
   dt { flex: 0 0 11rem; color: var(--tenue); font-size: .95rem; }
   dd { flex: 1 1 10rem; margin: 0; }
 
-  .ingredienti { font-size: 1.15rem; margin: 0 0 .6rem; }
+  .ingredienti { font-size: 1.1rem; margin: 0 0 .5rem; }
   .allergene { font-weight: 700; }
+  .nota { font-size: .92rem; color: var(--tenue); margin: 0; }
 
   table { width: 100%; border-collapse: collapse; }
-  caption {
-    text-align: left;
-    color: var(--tenue);
-    font-size: .95rem;
-    padding-bottom: .5rem;
-  }
+  caption { text-align: left; color: var(--tenue); font-size: .95rem; padding-bottom: .5rem; }
   th, td { text-align: left; padding: .5rem 0; border-bottom: 1px solid var(--riga); }
   td { text-align: right; font-variant-numeric: tabular-nums; }
   th { font-weight: 400; }
@@ -95,7 +83,7 @@
     font-size: .9rem;
     color: var(--tenue);
   }
-  footer p { margin: 0 0 .6rem; }
+  footer p { margin: 0; }
 
   @media (prefers-color-scheme: dark) {
     :root {
@@ -108,65 +96,43 @@
 <body>
 <main class="foglio">
 
-  <header>
-    <p class="produttore">Armaterra</p>
-    <h1>Campania Aglianico IGP</h1>
-    <p class="annata">Vendemmia 2025 · Lotto 101</p>
-  </header>
+  <p class="occhiello">E-label</p>
+  <h1>Campania Aglianico IGP</h1>
+  <p class="annata">Vendemmia 2025</p>
+
+  <dl>
+    <div class="voce"><dt>Denominazione</dt><dd>Campania Aglianico IGP</dd></div>
+    <div class="voce"><dt>Vendemmia</dt><dd>2025</dd></div>
+    <div class="voce"><dt>Lotto</dt><dd>101</dd></div>
+    <div class="voce"><dt>Volume</dt><dd>75 cl</dd></div>
+    <div class="voce"><dt>Titolo alcolometrico</dt><dd>13,50 % vol</dd></div>
+    <div class="voce"><dt>Origine</dt><dd>Prodotto in Italia</dd></div>
+    <div class="voce"><dt>Vigna</dt><dd>Particella 013 - Santapaolina</dd></div>
+    <div class="voce"><dt>Imbottigliamento</dt><dd>ICQRF AV4312</dd></div>
+    <div class="voce"><dt>Allergeni</dt><dd>Contiene solfiti</dd></div>
+  </dl>
 
   <h2>Ingredienti</h2>
-  <p class="ingredienti">
-    Uve. Conservante: <span class="allergene">solfiti</span>.
-  </p>
-  <p><!-- DA COMPLETARE: elencare ogni coadiuvante enologico effettivamente
-       impiegato che permane nel prodotto finito (es. correttori di acidità,
-       stabilizzanti, agenti chiarificanti). L'elenco va chiesto alla cantina. -->
-  </p>
+  <p class="ingredienti">Uve, conservante: <span class="allergene">solfiti</span>.</p>
+  <p class="nota">Da verificare con la cantina.</p>
 
   <h2>Dichiarazione nutrizionale</h2>
   <table>
-    <caption>Valori medi per 100 ml</caption>
+    <caption>Per 100 ml</caption>
     <tbody>
-      <tr><th scope="row">Energia</th><td>___ kJ / ___ kcal</td></tr>
+      <tr><th scope="row">Energia</th><td>____ kJ / ____ kcal</td></tr>
       <tr><th scope="row">Grassi</th><td>0 g</td></tr>
-      <tr class="sotto"><th scope="row">di cui acidi grassi saturi</th><td>0 g</td></tr>
-      <tr><th scope="row">Carboidrati</th><td>___ g</td></tr>
-      <tr class="sotto"><th scope="row">di cui zuccheri</th><td>___ g</td></tr>
+      <tr class="sotto"><th scope="row">di cui saturi</th><td>0 g</td></tr>
+      <tr><th scope="row">Carboidrati</th><td>____ g</td></tr>
+      <tr class="sotto"><th scope="row">di cui zuccheri</th><td>____ g</td></tr>
       <tr><th scope="row">Proteine</th><td>0 g</td></tr>
       <tr><th scope="row">Sale</th><td>0 g</td></tr>
     </tbody>
   </table>
-  <p><!-- DA COMPLETARE: i valori vanno dall'analisi di laboratorio del lotto,
-       oppure calcolati con il metodo riconosciuto a partire da grado alcolico
-       e zuccheri residui. Non stimare a occhio: sono dati soggetti a controllo. -->
-  </p>
-
-  <h2>Dati del prodotto</h2>
-  <dl>
-    <div class="voce"><dt>Denominazione</dt><dd>Campania Aglianico IGP</dd></div>
-    <div class="voce"><dt>Categoria</dt><dd>Vino rosso a indicazione geografica protetta</dd></div>
-    <div class="voce"><dt>Vendemmia</dt><dd>2025</dd></div>
-    <div class="voce"><dt>Lotto</dt><dd>101</dd></div>
-    <div class="voce"><dt>Volume nominale</dt><dd>75 cl</dd></div>
-    <div class="voce"><dt>Titolo alcolometrico</dt><dd>13,50 % vol</dd></div>
-    <div class="voce"><dt>Vigna</dt><dd>Particella 013 — Santapaolina</dd></div>
-    <div class="voce"><dt>Origine</dt><dd>Prodotto in Italia</dd></div>
-    <div class="voce"><dt>Imbottigliato da</dt><dd>ICQRF AV4312</dd></div>
-  </dl>
-
-  <h2>Smaltimento dell'imballaggio</h2>
-  <dl>
-    <div class="voce"><dt>Bottiglia</dt><dd>Vetro — GL 71</dd></div>
-    <div class="voce"><dt>Tappo</dt><dd>Sughero — FOR 51</dd></div>
-    <div class="voce"><dt>Capsula</dt><dd>Plastica — C/PVC 90</dd></div>
-  </dl>
-  <p>Verifica le disposizioni del tuo Comune.</p>
 
   <footer>
-    <p>Pagina dedicata alle informazioni obbligatorie previste dal Regolamento
-      (UE) 2021/2117. Non raccoglie dati personali, non utilizza cookie e non
-      contiene contenuti promozionali.</p>
-    <p>Ultimo aggiornamento: <time datetime="2026-09-15">15 settembre 2026</time></p>
+    <p>Questa pagina è destinata esclusivamente alle informazioni obbligatorie
+      dell'e-label. Non contiene contenuti promozionali o link commerciali.</p>
   </footer>
 
 </main>
